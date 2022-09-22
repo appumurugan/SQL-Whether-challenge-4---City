@@ -15,3 +15,12 @@ FROM STATION;
 select CITY,LENGTH(CITY) from STATION order by Length(CITY) asc, CITY limit 1; 
 select CITY,LENGTH(CITY) from STATION order by Length(CITY) desc, CITY limit 1; 
 
+
+
+
+Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+
+SELECT DISTINCT CITY
+FROM STATION 
+WHERE CITY REGEXP '^[aeiou]'
+
